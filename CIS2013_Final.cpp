@@ -3,6 +3,7 @@
 #include "Motorcycle.h"
 using namespace std;
 
+void menu();
 
 int main(){
 	char next;
@@ -12,13 +13,7 @@ int main(){
 	Motorcycle user;
 	
 	while (next != 'x'){
-	cout << "What do you want to change?: " << endl;	
-	cout << "Change color (c)" << endl;
-	cout << "Change year (y)" << endl;
-	cout << "Change make (m)" << endl;
-	cout << "Change model (d)" << endl;
-	cout << "Print info (p)" << endl;
-	cout << "exit (x)" << endl;
+		menu();
 		cin >> next;
 		
 		switch(next){
@@ -43,5 +38,15 @@ int main(){
 
 	}
 	return 0;
+}
+
+void menu(){
+	cout << "What do you want to change?: " << endl;	
+	cout << "Change color (c)" << endl;
+	cout << "Change year (y)" << endl;
+	cout << "Change make (m)" << endl;
+	cout << "Change model (d)" << endl;
+	cout << "Print info (p)" << endl;
+	cout << "exit (x)" << endl;
 }
 
